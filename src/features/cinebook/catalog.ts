@@ -29,5 +29,5 @@ export const seats: Seat[] = Array.from({ length: 8 }, (_, rowIndex) =>
   }),
 ).flat();
 
-export const getMovie = (id: string) => movies.find((movie) => movie.id === id) ?? movies[0]!;
-export const getShowtime = (id: string) => showtimes.find((showtime) => showtime.id === id) ?? showtimes[0]!;
+export const getMovie = (id: string) => movies.find((movie) => movie.id === id);
+export const getShowtime = (id: string) => showtimes.find((showtime) => showtime.id === id);
